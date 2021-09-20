@@ -60,23 +60,26 @@ body {
 
 .user {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   padding-top: 20px;
 }
 .user__photo {
-  width: 50px;
-  width: 50px;
+  width: 60px;
+  width: 60px;
 }
-.user-text__name {
+.user__text {
+  margin-left: 15px;
+}
+.user__text__name {
   font-size: 14px;
 }
-.user-text__position {
+.user__text__position {
   font-size: 12px;
   color: #9B9B9B;
 }
 .user__point {
+  margin-left: 20px;
   position: relative;
   width: 20px;
   height: 20px;
