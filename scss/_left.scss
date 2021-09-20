@@ -1,0 +1,73 @@
+.left-block {
+  width: 100%;
+  max-width: 270px;
+  height: 1117px;
+  background: $black;
+}
+.container__left {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.projectus{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__logo {
+
+  }
+  &__text {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  &__search{
+    margin-left: 50px;
+  }
+}
+
+
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+
+  &__photo {
+    width: 50px;
+    width: 50px;
+  }
+
+  &-text {
+    &__name {
+      font-size: 14px;
+    }
+
+    &__position {
+      font-size: 12px;
+      color: $gray;
+    }
+  }
+
+  &__point {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+
+    &:after {
+      content: '•••';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      font-size: 5px;
+      //letter-spacing: 4px;
+      //margin-top: 2px;
+    }
+  }
+}
+

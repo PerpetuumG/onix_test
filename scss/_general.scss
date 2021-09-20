@@ -1,0 +1,26 @@
+$black: #000;
+$white: #fff;
+$gray: #9B9B9B;
+$yellow: #FFC200;
+$text: #131313;
+$active: #878787;
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('../fonts/Helvetica.eot');
+  src: url('../fonts/Helvetica.eot?iefix') format('eot'),
+  url('../fonts/Helvetica.woff') format('woff'),
+  url('../fonts/Helvetica.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body{
+  font-family: Helvetica;
+  font-size: 16px;
+  color: $white;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
