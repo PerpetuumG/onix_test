@@ -30,24 +30,22 @@ body {
 
 .wrapper {
   max-width: 1440px;
+  margin: 0 auto;
+  max-height: 1117px;
+  display: flex;
 }
 
 .left-block {
   width: 100%;
   max-width: 270px;
-  height: 1117px;
   background: #000;
-}
-
-.container__left {
-  padding-top: 20px;
-  padding-left: 30px;
 }
 
 .projectus {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 30px;
 }
 .projectus__text {
   margin-left: 20px;
@@ -62,11 +60,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 20px;
+  background: #202020;
 }
 .user__photo {
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   width: 60px;
-  width: 60px;
+  height: 60px;
+}
+.user__photo__img {
+  width: 100%;
 }
 .user__text {
   margin-left: 15px;
@@ -92,7 +96,119 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(180deg);
-  font-size: 5px;
+  font-size: 10px;
+  letter-spacing: 4px;
 }
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+}
+.tasks__left, .tasks__right {
+  display: block;
+}
+.tasks__right {
+  padding-left: 20px;
+}
+.tasks__text {
+  font-size: 20px;
+}
+.tasks__info {
+  font-size: 12px;
+  color: #9B9B9B;
+}
+
+.menu {
+  padding: 30px;
+}
+.menu__title {
+  font-size: 12px;
+  color: #878787;
+  text-transform: uppercase;
+}
+.menu li {
+  margin-top: 15px;
+  position: relative;
+}
+.menu li:last-child::after {
+  margin-left: 20px;
+  position: absolute;
+  content: "3";
+  background: #FFC200;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+}
+.menu a {
+  color: #fff;
+}
+
+.right-block {
+  width: 100%;
+  max-width: 1270px;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+.block__1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+
+  max-height: 136px;
+}
+
+.shape {
+  width: 40px;
+  height: 40px;
+  background: $yellow;
+  border-radius: 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.title {
+  color: $black;
+  font-size: 32px;
+}
+.point {
+  margin-left: 20px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #eaeaea;
+  color: $gray;
+  border-radius: 50%;
+
+  &:after {
+    content: '•••';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    font-size: 5px;
+    letter-spacing: 4px;
+    //margin-top: 2px;
+  }
+}
+
+
+.block__7 {
+  background: purple;
+}*/
 
 /*# sourceMappingURL=style.css.map */

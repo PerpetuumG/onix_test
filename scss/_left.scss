@@ -1,27 +1,31 @@
 .left-block {
   width: 100%;
   max-width: 270px;
-  height: 1117px;
+  //height: 1117px;
   background: $black;
 }
+
 .container__left {
-  padding-top: 20px;
-  padding-left: 30px;
+
 }
-.projectus{
+
+.projectus {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 30px;
 
   &__logo {
 
   }
+
   &__text {
     margin-left: 20px;
     text-transform: uppercase;
     font-size: 16px;
   }
-  &__search{
+
+  &__search {
     margin-left: 50px;
   }
 }
@@ -30,18 +34,27 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 20px;
+  background: #202020;
 
   &__photo {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 60px;
-    width: 60px;
+    height: 60px;
+
+    &__img {
+      width: 100%;
+    }
   }
 
   &__text {
     margin-left: 15px;
+
     &__name {
       font-size: 14px;
     }
+
     &__position {
       font-size: 12px;
       color: $gray;
@@ -62,14 +75,65 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(180deg);
-      font-size: 5px;
-      //letter-spacing: 4px;
+      font-size: 10px;
+      letter-spacing: 4px;
       //margin-top: 2px;
     }
   }
 }
 
-.tasks{
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
 
+  &__left, &__right {
+    display: block;
+  }
+
+  &__right {
+    padding-left: 20px;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__info {
+    font-size: 12px;
+    color: $gray;
+  }
 }
 
+.menu {
+  padding: 30px;
+
+  &__title {
+    font-size: 12px;
+    color: $active;
+    text-transform: uppercase;
+  }
+
+  li {
+    margin-top: 15px;
+    position: relative;
+
+    &:last-child::after {
+      margin-left: 20px;
+      position: absolute;
+      content: "3";
+      background: $yellow;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      color: $black;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+}
