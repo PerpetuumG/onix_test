@@ -1,6 +1,6 @@
 .right-block {
   width: 100%;
-  max-width: 1270px;
+  //max-width: 1270px;
   //height: 1117px;
   background: $white;
   color: $text;
@@ -58,79 +58,89 @@
       }
     }
   }
+
   &__right {
     width: 50%;
     padding-top: 30px;
   }
-    .right__info {
-      padding-right: 30px;
+
+  .right__info {
+    padding-right: 30px;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-left: 5px;
+    }
+
+    button {
       display: flex;
-      justify-content: end;
-      flex-wrap: wrap;
       align-items: center;
+      text-align: center;
+      width: 67px;
+      height: 30px;
+      border-radius: 15px;
 
-      img {
-        width: 30px;
-        height: 30px;
-        margin-left: 5px;
+      a {
+        margin: 0 auto;
+        font-size: 14px;
+      }
+    }
+
+    .button__1 {
+      background: #eaeaea;
+      margin-left: 15px;
+    }
+
+    .button__2 {
+      width: 81px;
+      background: #FFF8DD;
+      margin-left: 15px;
+
+      &__combined {
+        width: 20px;
+        margin: 0 auto;
       }
 
-      button {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 67px;
-        height: 30px;
-        border-radius: 15px;
-
-        a {
-          margin: 0 auto;
-          font-size: 14px;
-        }
-      }
-      .button__1{
-        background: #eaeaea;
-        margin-left: 15px;
+      a {
+        color: $yellow
       }
 
-      .button__2 {
-        width: 81px;
-        background: #FFF8DD;
-        margin-left: 15px;
-        &__combined {
-          width: 20px;
-          margin: 0 auto;
-        }
-        a{
-          color: $yellow
-        }
-
-      }
     }
   }
+}
 
 
-  .top-menu {
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: 10px;
+.container {
+  margin-top: 0;
+  padding-bottom: 20px;
+}
 
-    }
+.navbar {
+  ul{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
 
-    .top-menu__item {
+    li {
+      margin-top: 20px;
+      list-style: none;
+
       a {
-        display: block;
-        padding: 10px 17px;
+        text-decoration: none;
         color: $black;
         font-size: 16px;
-        transition: 0.3s;
-        border-bottom: 3px solid transparent;
-
-        &:hover {
-          color: $yellow;
-          border-bottom: 2px solid $yellow;
-        }
+        //text-transform: uppercase;
+        padding: 10px 17px;
       }
     }
   }
+}
+
+.container .navbar ul li a.active {
+  border-bottom: 2px solid $yellow;
+}

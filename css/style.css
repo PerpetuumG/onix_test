@@ -130,11 +130,9 @@ body {
 }
 .menu li {
   margin-top: 15px;
-  position: relative;
 }
 .menu li:last-child::after {
   margin-left: 20px;
-  position: absolute;
   content: "3";
   background: #FFC200;
   width: 20px;
@@ -143,6 +141,7 @@ body {
   color: #000;
   font-size: 13px;
   text-align: center;
+  padding: 4px;
 }
 .menu a {
   color: #fff;
@@ -150,7 +149,6 @@ body {
 
 .right-block {
   width: 100%;
-  max-width: 1270px;
   background: #fff;
   color: #131313;
 }
@@ -245,21 +243,28 @@ body {
   color: #FFC200;
 }
 
-.top-menu__list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 10px;
+.container {
+  margin-top: 0;
+  padding-bottom: 20px;
 }
-.top-menu .top-menu__item a {
-  display: block;
-  padding: 10px 17px;
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+.navbar ul li {
+  margin-top: 20px;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
   color: #000;
   font-size: 16px;
-  transition: 0.3s;
-  border-bottom: 3px solid transparent;
+  padding: 10px 17px;
 }
-.top-menu .top-menu__item a:hover {
-  color: #FFC200;
+
+.container .navbar ul li a.active {
   border-bottom: 2px solid #FFC200;
 }
 
@@ -273,6 +278,7 @@ body {
   height: 591px;
   margin: 0 auto;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .box {
