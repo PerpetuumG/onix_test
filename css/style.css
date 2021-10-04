@@ -132,8 +132,8 @@ body {
   margin-top: 15px;
 }
 .menu li:last-child::after {
-  margin-left: 20px;
   content: "3";
+  margin-left: 5px;
   background: #FFC200;
   width: 20px;
   height: 20px;
@@ -141,7 +141,7 @@ body {
   color: #000;
   font-size: 13px;
   text-align: center;
-  padding: 4px;
+  padding: 5px;
 }
 .menu a {
   color: #fff;

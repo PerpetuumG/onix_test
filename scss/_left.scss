@@ -113,12 +113,10 @@
 
   li {
     margin-top: 15px;
-    //position: relative;
 
     &:last-child::after {
-      margin-left: 20px;
-      //position: absolute;
       content: "3";
+      margin-left: 5px;
       background: $yellow;
       width: 20px;
       height: 20px;
@@ -126,7 +124,7 @@
       color: $black;
       font-size: 13px;
       text-align: center;
-      padding: 4px;
+      padding: 5px;
     }
   }
 
@@ -134,3 +132,4 @@
     color: $white;
   }
 }
+
