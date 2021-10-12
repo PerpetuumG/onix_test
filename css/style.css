@@ -47,13 +47,22 @@ body {
   align-items: center;
   padding: 30px;
 }
+.projectus__logo {
+  margin-right: 20px;
+}
 .projectus__text {
-  margin-left: 20px;
   text-transform: uppercase;
   font-size: 16px;
+  margin-right: 50px;
 }
-.projectus__search {
-  margin-left: 50px;
+@media (max-width: 1000px) {
+  .projectus__logo {
+    margin-right: 10px;
+  }
+  .projectus__text {
+    font-size: 10px;
+    margin-right: 10px;
+  }
 }
 
 .user {
@@ -61,11 +70,10 @@ body {
   flex-wrap: wrap;
   align-items: center;
   background: #202020;
+  padding: 10px;
 }
 .user__photo {
-  margin-left: 30px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 0px 15px 0px 15px;
   width: 60px;
   height: 60px;
 }
@@ -73,7 +81,7 @@ body {
   width: 100%;
 }
 .user__text {
-  margin-left: 15px;
+  margin-right: 20px;
 }
 .user__text__name {
   font-size: 14px;
@@ -83,7 +91,6 @@ body {
   color: #9B9B9B;
 }
 .user__point {
-  margin-left: 20px;
   position: relative;
   width: 20px;
   height: 20px;
@@ -109,8 +116,8 @@ body {
 .tasks__left, .tasks__right {
   display: block;
 }
-.tasks__right {
-  padding-left: 20px;
+.tasks__left {
+  padding-right: 20px;
 }
 .tasks__text {
   font-size: 20px;
@@ -214,7 +221,7 @@ body {
   height: 30px;
   margin-left: 5px;
 }
-.header .right__info button {
+.header .right__info .button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -222,7 +229,7 @@ body {
   height: 30px;
   border-radius: 15px;
 }
-.header .right__info button a {
+.header .right__info .button a {
   margin: 0 auto;
   font-size: 14px;
 }

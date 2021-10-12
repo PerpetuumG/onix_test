@@ -1,7 +1,6 @@
 .left-block {
   width: 100%;
   max-width: 270px;
-  //height: 1117px;
   background: $black;
 }
 
@@ -12,17 +11,23 @@
   padding: 30px;
 
   &__logo {
-
+    margin-right: 20px;
   }
 
   &__text {
-    margin-left: 20px;
     text-transform: uppercase;
     font-size: 16px;
+    margin-right: 50px;
   }
 
-  &__search {
-    margin-left: 50px;
+  @media(max-width: 1000px) {
+    &__logo {
+      margin-right: 10px;
+    }
+    &__text {
+      font-size: 10px;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -31,11 +36,10 @@
   flex-wrap: wrap;
   align-items: center;
   background: #202020;
+  padding: 10px;
 
   &__photo {
-    margin-left: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 0px 15px 0px 15px;
     width: 60px;
     height: 60px;
 
@@ -45,8 +49,7 @@
   }
 
   &__text {
-    margin-left: 15px;
-
+    margin-right: 20px;
     &__name {
       font-size: 14px;
     }
@@ -58,7 +61,6 @@
   }
 
   &__point {
-    margin-left: 20px;
     position: relative;
     width: 20px;
     height: 20px;
@@ -73,7 +75,6 @@
       transform: translate(-50%, -50%) rotate(180deg);
       font-size: 10px;
       letter-spacing: 4px;
-      //margin-top: 2px;
     }
   }
 }
@@ -87,9 +88,8 @@
   &__left, &__right {
     display: block;
   }
-
-  &__right {
-    padding-left: 20px;
+  &__left {
+    padding-right: 20px;
   }
 
   &__text {
