@@ -56,59 +56,106 @@
         }
       }
     }
+
+    @media (max-width: 1065px) {
+      .point {
+        display: none;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .shape {
+        width: 20px;
+        height: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 530px) {
+      .shape {
+        display: none;
+      }
+    }
+
+    @media (max-width: 490px) {
+      .title {
+        font-size: 18px;
+      }
+    }
   }
 
   &__right {
-    width: 50%;
+    min-width: 50%;
     padding-top: 30px;
-  }
 
-  .right__info {
-    padding-right: 30px;
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-    align-items: center;
-
-    img {
-      width: 30px;
-      height: 30px;
-      margin-left: 5px;
-    }
-
-    .button {
+    &-info {
       display: flex;
-      align-items: center;
-      text-align: center;
-      width: 67px;
-      height: 30px;
-      border-radius: 15px;
+      justify-content: flex-end;
+      flex-wrap: wrap;
 
-      a {
-        margin: 0 auto;
-        font-size: 14px;
+      .image {
+        img {
+          width: 30px;
+          height: 30px;
+          margin-left: 5px;
+        }
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 67px;
+        height: 30px;
+        border-radius: 15px;
+
+        a {
+          margin: 0 auto;
+          font-size: 14px;
+        }
+      }
+
+      .button__1 {
+        background: #eaeaea;
+        margin-left: 15px;
+      }
+
+      .button__2 {
+        width: 81px;
+        background: #FFF8DD;
+        margin-left: 15px;
+
+        &__combined {
+          width: 20px;
+          margin: 0 auto;
+        }
+
+        a {
+          color: $yellow
+        }
+
       }
     }
 
-    .button__1 {
-      background: #eaeaea;
-      margin-left: 15px;
+    @media (max-width: 585px) {
+      .image {
+        display: none;
+      }
     }
-
-    .button__2 {
-      width: 81px;
-      background: #FFF8DD;
-      margin-left: 15px;
-
-      &__combined {
-        width: 20px;
-        margin: 0 auto;
+    @media (max-width: 500px) {
+      .button {
+        width: 40px;
+        height: 20px;
+        a {
+          font-size: 10px;
+        }
       }
-
-      a {
-        color: $yellow
+      .button__2__combined {
+        width: 10px;
       }
-
     }
   }
 }
