@@ -7,6 +7,7 @@
 
 .header {
   display: flex;
+  align-items: center;
 
   &__left {
     min-width: 50%;
@@ -89,12 +90,14 @@
 
   &__right {
     min-width: 50%;
-    padding-top: 30px;
+
 
     &-info {
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap;
+      padding-top: 30px;
+      padding-right: 10px;
 
       .image {
         img {
@@ -218,30 +221,4 @@
       text-align: left;
     }
   }
-
-
-  /*.navbar {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      text-align: center;
-
-      li {
-        margin-top: 20px;
-        list-style: none;
-
-        a {
-          text-decoration: none;
-          color: $black;
-          font-size: 16px;
-          //text-transform: uppercase;
-          padding: 10px 17px;
-        }
-      }
-    }
-  }
-
-     */
-
 }
