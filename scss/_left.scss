@@ -20,7 +20,7 @@
     margin-right: 50px;
   }
 
-  @media(max-width: 1000px) {
+  @media(max-width: 1052px) {
     &__logo {
       margin-right: 10px;
     }
@@ -29,7 +29,7 @@
       margin-right: 10px;
     }
   }
-  @media(max-width: 910px) {
+  @media(max-width: 965px) {
     &__logo {
       margin: 0 auto;
       margin-bottom: 10px;
@@ -92,14 +92,12 @@
     }
   }
 
-  @media(max-width: 975px) {
+  @media(max-width: 1030px) {
     &__point {
       display: none;
-      /*margin-top: 5px;
-      margin-left: 20px;*/
     }
   }
-  @media(max-width: 950px) {
+  @media(max-width: 1000px) {
     &__photo {
       margin: 0 auto;
       margin-bottom: 5px;
@@ -171,7 +169,7 @@
     color: $white;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 970px) {
     padding-top: 20px;
     &__title {
       font-size: 10px;
@@ -190,7 +188,7 @@
     }
   }
 
-  @media (max-width: 875px) {
+  @media (max-width: 920px) {
     li:last-child::after {
      display: none;
     }
