@@ -13,7 +13,7 @@ li.forEach(el => {
 
 
 let navbar = document.querySelector(".navbar").querySelectorAll("a")
-console.log(navbar)
+// console.log(navbar)
 
 navbar.forEach(element => {
     element.addEventListener('click', function() {
@@ -22,13 +22,13 @@ navbar.forEach(element => {
         this.classList.add("active")
     })
 })
-
-function myFunction() {
-    let x = document.getElementById('myNavbar');
-    if (x.className === 'navbar') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'navbar';
-    }
-}
+//
+// function myFunction() {
+//     let x = document.getElementById('myNavbar');
+//     if (x.className === 'navbar') {
+//         x.className += ' responsive';
+//     } else {
+//         x.className = 'navbar';
+//     }
+// }
 
