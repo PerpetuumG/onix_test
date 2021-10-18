@@ -170,17 +170,18 @@ body {
 .menu li {
   margin-top: 15px;
 }
-.menu li:last-child::after {
-  content: "3";
+.menu li .number {
   margin-left: 5px;
-  background: #FFC200;
+  background-color: #FFC200;
+  color: #000;
+  border: none;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  color: #000;
-  font-size: 13px;
   text-align: center;
-  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 50%;
 }
 .menu a {
   color: #fff;
@@ -198,13 +199,13 @@ body {
   .menu li {
     margin-top: 5px;
   }
-  .menu li:last-child::after {
+  .menu li .number {
     font-size: 10px;
     margin-left: 0;
   }
 }
-@media (max-width: 920px) {
-  .menu li:last-child::after {
+@media (max-width: 930px) {
+  .menu li .number {
     display: none;
   }
 }
