@@ -554,14 +554,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.article__container .article__5__img {
-  width: 570px;
-  height: 70px;
-}
-.article__container .article__5__img img {
-  width: 100px;
-  margin-right: 10px;
-}
 @media (max-width: 760px) {
   .article .articles {
     font-size: 14px;
