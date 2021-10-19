@@ -19,7 +19,7 @@
       padding-left: 30px;
       align-items: center;
 
-      .shape {
+      /*.shape {
         width: 40px;
         height: 40px;
         background: $yellow;
@@ -28,12 +28,28 @@
         img {
           width: 100%;
         }
-      }
+      }*/
 
       .title {
+        display: flex;
+        flex-wrap: wrap;
         margin-left: 20px;
         color: $black;
         font-size: 32px;
+
+        &:before {
+          content: '';
+          position: relative;
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: $yellow;
+          background-image: url("../img/Shapes@2x.png");
+          background-repeat: no-repeat;
+          top: calc(50% - 20px);
+          background-size: cover;
+          margin-right: 10px;
+        }
       }
 
       .point {
@@ -61,23 +77,23 @@
       }
     }
 
-    @media (max-width: 700px) {
-      .shape {
-        width: 20px;
-        height: 20px;
-      }
-
+    @media (max-width: 715px) {
       .title {
         font-size: 24px;
+        &::before {
+          width: 20px;
+          height: 20px;
+          top: calc(50% - 10px);
+        }
       }
     }
 
-    @media (max-width: 530px) {
-      .shape {
-        display: none;
-      }
+    @media (max-width: 550px) {
       .title {
         margin-left: 0;
+        &::before {
+          display: none;
+        }
       }
 
     }
@@ -155,7 +171,6 @@
         width: 40px;
         height: 20px;
         font-size: 10px;
-
 
       }
       .button__2 {
