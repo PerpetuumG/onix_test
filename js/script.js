@@ -67,10 +67,12 @@ function myFunction() {
 
 
 //Работа с картинками
-//Добавление картинок на страницу
+//Создание массива картинок
 let imageSources = ['/img/cap_1.png', '/img/cap_2.png', '/img/cap_3.png', '/img/cap_4.png']
+//Добавление картинок на страницу
 imageSources.forEach(element => {
     let img = document.createElement("img")
+    img.className = 'cartin__img'
     img.width = '100'
     img.height = '100'
     img.style.marginLeft = '7px'
@@ -78,7 +80,15 @@ imageSources.forEach(element => {
     document.getElementById("cartin").appendChild(img)
 })
 
-
+let res = document.querySelector('#numberID');
+let arrElem = document.querySelectorAll('.cartin__img');
+let arrayElem = [];
+for (let i = 0; i < arrElem.length; i++){
+    arrayElem.push(arrElem[i]);
+    arrElem[i].addEventListener('click', function(e){
+        res.innerHTML = arrayElem.indexOf(e.target);
+    });
+}
 
 
 
