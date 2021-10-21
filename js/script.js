@@ -36,7 +36,7 @@ navbar.forEach(element => {
 let tasks1 = document.querySelector('#task__text-1').innerHTML
 let tasks2 = document.querySelector('#task__text-2').innerHTML
 
-function myFunction() {
+function completedTasks() {
     let message = 'Are you sure you want to change the number of tasks?'
     if (confirm(message)) {
         if (tasks2 > 0) {
@@ -47,15 +47,22 @@ function myFunction() {
         } else {
             alert('Количество открытых задач не может становиться отрицательным числом')
         }
-    } else {
+    }
+    document.getElementById("task__text-1").innerHTML = "";
+    document.getElementById("task__text-1").append(tasks1)
+    document.getElementById("task__text-2").innerHTML = "";
+    document.getElementById("task__text-2").append(tasks2)
+}
 
+function openTasks() {
+    let message = 'Are you sure you want to change the number of open tasks?'
+    if (confirm(message)) {
         if (tasks1 > 0) {
             //tasks1 = tasks1 - 1
             //tasks2 = tasks2 + 1
             tasks1 = Number(tasks1) - 1
             tasks2 = Number(tasks2) + 1
-        }
-        else {
+        } else {
             alert('Количество выполненных задач не может становиться отрицательным числом')
         }
     }
@@ -70,7 +77,7 @@ function myFunction() {
 //Создание массива картинок
 let imageSources = ['/img/cap_1.png', '/img/cap_2.png', '/img/cap_3.png', '/img/cap_4.png']
 //Добавление картинок на страницу
-imageSources.forEach(element => {
+/*imageSources.forEach(element => {
     let img = document.createElement("img")
     img.className = 'cartin__img'
     img.width = '100'
@@ -88,8 +95,24 @@ for (let i = 0; i < arrElem.length; i++){
     arrElem[i].addEventListener('click', function(e){
         res.innerHTML = arrayElem.indexOf(e.target);
     });
-}
+}*/
 
+imageSources.forEach(element => {
+    let img = document.createElement("img")
+    img.className = 'cartin__img'
+    img.width = '100'
+    img.height = '100'
+    img.style.marginLeft = '7px'
+    img.src = element
+    document.getElementById("cartin").appendChild(img)
 
-
-
+    let res = document.querySelector('#numberID');
+    let arrElem = document.querySelectorAll('.cartin__img');
+    let arrayElem = [];
+    for (let i = 0; i < arrElem.length; i++) {
+        arrayElem.push(arrElem[i]);
+        arrElem[i].addEventListener('click', function (e) {
+            res.innerHTML = arrayElem.indexOf(e.target);
+        });
+    }
+})
