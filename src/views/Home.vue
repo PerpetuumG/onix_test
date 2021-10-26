@@ -1,11 +1,156 @@
 <template>
-  <div>1</div>
+  <div class="wrapper">
+    <div class="left-block">
+      <div class="container__left">
+        <div class="projectus">
+          <h2 class="projectus__text">projectus</h2>
+        </div>
+        <div class="user">
+          <div class="user__photo">
+            <img class="user__photo__img" src="../assets/img/jean.png" alt="">
+          </div>
+          <div class="user__text">
+            <p class="user__text__name">Jean Gonzales</p>
+            <p class="user__text__position">Product Owner</p>
+          </div>
+          <button class="user__point">
+            <p class="dots">...
+            </p>
+          </button>
+        </div>
+        <div class="tasks">
+          <div class="tasks__left" onclick="completedTasks()">
+            <p class="tasks__text" id="task__text-1">372</p>
+            <div class="tasks__info">Completed Tasks</div>
+          </div>
+          <div class="tasks__right" onclick="openTasks()">
+            <p class="tasks__text" id="task__text-2">11</p>
+            <div class="tasks__info">Open Tasks</div>
+          </div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li>
+              <p class="menu__title">Menu</p>
+            </li>
+            <li>
+              <a class="menu__link" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="menu__link" href="#mytasks">My Tasks</a>
+            </li>
+            <li>
+              <a class="menu__link" href="#notification">Notification</a>
+              <div class="number" id="numberID">3</div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="right-block">
+      <div class="header">
+        <div class="header__left">
+          <div class="header__left-title">
+            <!--<div class="shape">
+                <img src="img/Shapes@2x.png" alt="">
+            </div>-->
+            <p class="title">Website Redesign</p>
+            <button class="point">
+              <p class="dots">...
+              </p>
+            </button>
+
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="header__right-info">
+            <div class="image">
+              <img src="../assets/img/img1.png" alt="">
+              <img src="../assets/img/img2.png" alt="">
+              <img src="../assets/img/img3.png" alt="">
+            </div>
+            <button class="button__1">Share</button>
+            <button class="button__2">Chat</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <nav class="navbar" id="myNavbar">
+          <ul>
+            <li>
+              <a class="active" href="#top">Tasks</a>
+            </li>
+            <li>
+              <a href="#about">Kanban</a>
+            </li>
+            <li>
+              <a href="#portfolio">Activity</a>
+            </li>
+            <li>
+              <a href="#pricing">Calendar</a>
+            </li>
+            <li>
+              <a href="#team">Files</a>
+            </li>
+            <!--<li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+            </li>-->
+          </ul>
+        </nav>
+      </div>
+
+      <div class="article">
+        <div class="article__container">
+          <div class="box">
+            <div class="today">
+              <h2 class="today__header">today</h2>
+            </div>
+            <div class="articles">
+              <div class="article__1">
+                <p class="article__1__text">Darika Samak mark as done Listing on Product Hunt so that<br> we
+                  can reach as many potential
+                  users</p>
+                <p class="article__1__time">8:40 PM</p>
+              </div>
+              <div class="article__2">
+                <p class="article__2__text">Emilee Simchenko commented on Account for teams and<br>
+                  personal
+                  in bottom style
+                  users</p>
+                <p class="article__2__time">7:32 PM</p>
+              </div>
+              <div class="article__3">
+                <p class="article__3__text">During a project build, it is necessary to evaluate the
+                  product design<br> and development against project requirements and outcomes
+                  users</p>
+              </div>
+              <div class="article__4">
+                <p class="article__4__text">Darika Samak uploaded 4 files on An option to search in<br>
+                  current
+                  projects or in all projects</p>
+                <p class="article__4__time">6:02 PM</p>
+              </div>
+              <div class="article__5">
+                <div id="cartin">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
-
 export default defineComponent({
   name: 'Home'
 })
+
+let navbar = document.querySelector(".navbar").querySelectorAll("a")
 </script>
